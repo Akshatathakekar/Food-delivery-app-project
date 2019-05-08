@@ -1,0 +1,28 @@
+package com.capgemini.userdata.controller;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.capgemini.userdata.entity.Users;
+import com.capgemini.userdata.service.impl.UserServiceImpl;
+
+@RestController()
+@RequestMapping("/user")
+
+public class UserController {
+
+	
+	private UserServiceImpl service;
+	
+	@PostMapping("/add")
+	public Users regsiterAllDetails(@RequestBody Users user)
+	{
+		Users userData=service.addAllDetails(user);
+		
+		return userData;
+		
+	}
+	
+	
+}

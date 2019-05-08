@@ -1,0 +1,41 @@
+import { Component, OnInit } from '@angular/core';
+import { Address, Users } from './user';
+import { WelcomeService } from './welcome.service';
+import { Router } from '@angular/router';
+
+@Component({
+    templateUrl:"./welcome.component.html"
+    })
+export class WelcomeComponent implements OnInit{
+
+    user:Users;
+
+    constructor(private welcomeService:WelcomeService,
+                private router:Router){ }
+
+    ngOnInit(){
+            this.user=new Users();
+            this.user.address=new Address();
+        
+    }
+
+    register():void{
+
+        this.welcomeService.registerNewUser(this.user).subscribe((data)=>{
+            
+            console.log("success");
+
+            if(data!=null){
+                alert("registration is successful Please, login");
+                this.router.navigate(["/home"]);
+
+            }
+
+        })
+       
+
+    }
+  
+  
+
+}

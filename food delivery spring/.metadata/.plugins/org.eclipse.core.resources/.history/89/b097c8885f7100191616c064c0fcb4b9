@@ -1,0 +1,14 @@
+package com.capgemini.userdata.service.impl;
+
+import com.capgemini.userdata.entity.Users;
+import com.capgemini.userdata.service.UserService;
+
+public class UserServiceImpl implements UserService{
+
+	@Override
+	public Users addAllDetails() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.capgemini.userdata.service.impl;
+
+public class UserServiceImpl {
+
+}

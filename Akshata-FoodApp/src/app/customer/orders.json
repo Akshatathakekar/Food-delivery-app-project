@@ -1,0 +1,42 @@
+[
+        
+        {
+            "orderId":123456,
+            "price":450,
+            "ratings":3.2,
+            "quantity":2,
+            "dishName":"Pizza",
+            "status":"Delivered",
+            "imgUrl":"assets/images/pizza.jpg",
+            "date":"25 April 2019"
+        },
+        {
+            "orderId":123457,
+            "price":200,
+            "ratings":4.2,
+            "quantity":3,
+            "dishName":"Ice Cream",
+            "status":"Delivered",
+            "imgUrl":"assets/images/icecream.jpg",
+            "date":"30 April 2019"
+            
+        },
+        {
+            "orderId":123458,
+            "price":100,
+            "ratings":4.0,
+            "quantity":4,
+            "dishName":"Burger",
+            "status":"Delivered",
+            "imgUrl":"assets/images/burger.jpg",
+            "date":"1 May 2019"
+            
+        }
+        
+    ]
+    
+    
+    
+    
+    
+    

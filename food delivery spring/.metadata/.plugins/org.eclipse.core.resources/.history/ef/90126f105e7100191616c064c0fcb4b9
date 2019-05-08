@@ -1,0 +1,17 @@
+package com.capgemini.userdata.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "user")
+public class Users {
+
+	private String name;
+	private String email;
+	private String password;
+	private int contact;
+	
+	
+	
+}

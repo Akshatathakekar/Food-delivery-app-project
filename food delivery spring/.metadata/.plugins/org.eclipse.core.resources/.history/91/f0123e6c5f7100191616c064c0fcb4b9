@@ -1,0 +1,7 @@
+package com.capgemini.userdata.service.impl;
+
+import com.capgemini.userdata.service.UserService;
+
+public class UserServiceImpl implements UserService{
+
+}

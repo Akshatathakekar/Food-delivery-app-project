@@ -1,0 +1,11 @@
+package com.capgemini.userdata.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.capgemini.userdata.entity.Users;
+
+public interface UserDao extends JpaRepository<Users, Long>{
+
+	
+	
+}
