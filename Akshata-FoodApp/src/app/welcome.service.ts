@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 export class WelcomeService{
 
 
-    baseUrl="http://localhost:8080/api/users";
+    baseUrl="http://localhost:8090/api/users";
     constructor(private http:HttpClient){}
 
     registerNewUser(user:Users):Observable<Users>{
@@ -15,6 +15,11 @@ export class WelcomeService{
         //return this.http.post<Users>(this.baseUrl+"/users",Users);
         return this.http.post<Users>(this.baseUrl,user);
 
+    }
+
+    loginUser(email:String,password:string):Observable<any>{
+
+        return this.http.get(this.baseUrl+"/"+email+"/"+password);
     }
    
 }

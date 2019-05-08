@@ -26,7 +26,7 @@ export class WelcomeComponent implements OnInit{
             console.log("success");
 
             if(data!=null){
-                alert("registration is successful Please, login");
+                alert("registration is successfulPlease, login");
                 this.router.navigate(["/home"]);
 
             }
@@ -34,6 +34,22 @@ export class WelcomeComponent implements OnInit{
         })
        
 
+    }
+
+
+    login():void{
+
+        let email=(<HTMLInputElement>document.getElementById("email")).value;
+        let password=(<HTMLInputElement>document.getElementById("pwd")).value;
+
+        this.welcomeService.loginUser(email,password).subscribe((data)=>
+         {
+            if(data!=null){
+            
+                 this.router.navigate(["/home"]);
+
+        }
+    })
     }
   
   
